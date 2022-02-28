@@ -1,0 +1,24 @@
+{
+  "name": "@mcimg/core",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Huang-Huang Bao",
+    "email": "eh5@eh5.me"
+  },
+  "type": "module",
+  "exports": {
+    "import": "./lib/index.js"
+  },
+  "module": "./lib/index.js",
+  "scripts": {
+    "test": "node test/convert-random.js"
+  },
+  "dependencies": {
+    "image-q": "^4.0.0",
+    "prismarine-nbt": "^2.2.0"
+  },
+  "devDependencies": {
+    "@mcimg/mc-data": "workspace:^0.0.0"
+  }
+}

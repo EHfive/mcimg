@@ -1,0 +1,31 @@
+{
+  "name": "@mcimg/mc-data",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    },
+    "./blocks": {
+      "require": "./dist/cjs/blocks.js",
+      "import": "./dist/esm/blocks.js"
+    }
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "pnpm run build",
+    "test": "node ./test/main.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@rollup/plugin-babel": "^5.3.1",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-preval": "^5.1.0",
+    "minecraft-data": "^2.113.3",
+    "rollup": "^2.68.0"
+  }
+}

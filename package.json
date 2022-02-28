@@ -1,0 +1,14 @@
+{
+  "name": "mcimg-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Huang-Huang Bao",
+    "email": "eh5@eh5.me"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}
