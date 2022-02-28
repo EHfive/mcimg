@@ -5,7 +5,7 @@ export class McImageQuantizer {
     this._palette = options.palette
     this._imageQPalette = this._palette._toImageQPalette()
     this._colorDistanceFormula = options.colorDistanceFormula || 'ciede2000'
-    this._imageQuantization = options.imageQuantization || 'floyd-steinberg'
+    this._imageQuantization = options.imageQuantization || 'jarvis'
   }
 
   quantize(width, height, data) {
